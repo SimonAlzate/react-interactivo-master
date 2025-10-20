@@ -1,0 +1,138 @@
+/* ===== Fondo principal ===== */
+.auth-screen {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ===== Caja blanca ===== */
+.auth-box {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+/* ===== Logo y texto superior ===== */
+.logo-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.logo-box h1 {
+  color: #1e3a8a;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.slogan {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* ===== Formulario ===== */
+h2 {
+  color: #2563eb;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-form input {
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-form input:focus {
+  border-color: #2563eb;
+}
+
+.login-form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.login-form button:hover {
+  background: #1e3a8a;
+  transform: translateY(-2px);
+}
+
+/* ===== Texto pequeño ===== */
+.small {
+  font-size: 14px;
+  color: #475569;
+  margin-top: 20px;
+}
+
+.small a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.small a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Animación ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 480px) {
+  .auth-box {
+    padding: 30px 24px;
+  }
+
+  .logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .logo-box h1 {
+    font-size: 18px;
+  }
+}
